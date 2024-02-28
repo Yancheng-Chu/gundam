@@ -1,0 +1,66 @@
+<view class="main">
+  <view class="back" bindtap="jumpBack">
+    <van-icon name="arrow-left" size="24px"/>
+  </view>
+  <image class="mine_logo" src="http://hdcafe.com/resource/images/mine/gradualChange_background.png" />
+
+  <view class="content">
+    <van-row>
+      <van-col span="3">
+        <image class="finish_icon" src="/resource/images/mine/finish.png" />
+      </van-col>
+      <van-col span="21">
+        <view class="finish">订单{{order.status}}</view>
+      </van-col>
+    </van-row>
+
+    <view class="card">
+      <van-row>
+        <van-col span="2">
+          <image class="designer_logo" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/mine/designer.png" />
+        </van-col>
+        <van-col span="22">
+          <view class="designer">{{order.name}} <span class="gray">></span></view>
+        </van-col>
+      </van-row>
+
+      <van-row>
+        <van-col span="10">
+          <image class="logo" src="{{order.logo}}" />
+        </van-col>
+        <van-col span="14">
+          <view class="">{{order.title}}</view>
+          <view class="option">套餐内包含: {{order.person}}人, {{order.diy_on_offer||'无定制'}}, {{order.location||''}}</view>
+          <view class="price">¥{{order.price}}</view>
+        </van-col>
+      </van-row>
+
+
+
+      <van-row wx:if="{{!order.status}}">
+        <view class="divider"></view>
+        <image class="qr" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/mine/qr.png" />
+        <van-col span="12">
+          <view class="wait">待使用</view>
+          <view class="save">请注意保存此二维码</view>
+        </van-col>
+        <van-col span="12">
+          <view wx:if="{{order.statu>=1}}" class="right">{{order.status}}
+          </view>
+          <view wx:else class="btn_box">
+            <div class="applyWithdraw" bindtap="withdraw">请退款</div>
+            <div class="applyFinish" bindtap="finish">已完成</div>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+
+    <view class="card">
+      <view class="ordertitle">订单信息</view>
+
+      <view class="ordermessage">下单时间: {{order.success_time}}</view>
+      <view class="ordermessage">订单编号: {{order.transaction_id}}</view>
+      <view class="ordermessage">活动时间: {{order.date}} {{order.time}}</view>
+    </view>
+  </view>
+</view>

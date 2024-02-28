@@ -1,0 +1,48 @@
+<view class="pb60 main">
+  <view class="tab f12" bindtap="tab">
+    <van-row>
+      <van-col class="{{tab=='全部'?'focu':'blur'}}" span="5" data-name="全部">全部</van-col>
+      <van-col class="{{tab=='待报价'?'focu':'blur'}}" span="3" data-name="待报价">待报价</van-col>
+      <van-col class="{{tab=='待支付'?'focu':'blur'}}" span="3" data-name="待支付">待支付</van-col>
+      <van-col class="{{tab=='待服务'?'focu':'blur'}}" span="3" data-name="待服务">待服务</van-col>
+      <van-col class="{{tab=='要退款'?'focu':'blur'}}" span="3" data-name="要退款">要退款</van-col>
+      <van-col class="{{tab=='已取消'?'focu':'blur'}}" span="3" data-name="已取消">已取消</van-col>
+      <van-col class="{{tab=='已完成'?'focu':'blur'}}" span="3" data-name="已完成">已完成</van-col>
+    </van-row>
+  </view>
+
+  <view class="card {{(tab==need.status || tab=='全部') ? '' : 'hide' }}" wx:for="{{needs}}" wx:for-index="key" wx:for-item="need" wx:key="key" bindtap="jumpToDetail" data-needkey="{{key}}">
+    <van-row>
+      <van-col span="2">
+        <image class="designer_logo" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/mine/designer.png" />
+      </van-col>
+      <van-col span="17">
+        <view class="designer f16">{{need.name || '客户需求'}}<span class="gray">></span></view>
+      </van-col>
+      <van-col span="5">
+        <view class="status">{{need.status}}</view>
+      </van-col>
+    </van-row>
+
+    <van-row>
+      <van-col span="10">
+        <image class="logo" src="{{need.logo}}" />
+      </van-col>
+      <van-col span="13">
+        <view class="need_title">{{need.title || need.party_type}}</view>
+        <view class="option">套餐内包含: {{need.person}}人, {{need.diy_on_offer||need.diy_on||'无定制'}}{{need.location?', '+need.location:''}}{{need.duration?', '+need.duration:''}}</view>
+      </van-col>
+    </van-row>
+
+    <van-row>
+      <van-col span="16">
+        <view wx:if="{{need.success_time}}" class="time">下单时间: {{}} {{need.success_time}}</view>
+        <view wx:else class="time">活动时间: {{need.date}} {{need.time}}</view>
+      </van-col>
+      <van-col span="8">
+        <view class="sum">合计: </view>
+        <view class="price">¥{{need.price||need.budget}}</view>
+      </van-col>
+    </van-row>
+  </view>
+</view>

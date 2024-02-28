@@ -1,0 +1,49 @@
+.title {
+  position: absolute;
+  left: 34rpx;
+  top: 188rpx;
+  width: 622rpx;
+  height: 68rpx;
+  font-size: 64rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: 550;
+}
+
+.pos{
+  margin-top: 300rpx;
+  margin-left: 64rpx;
+}
+.pic{
+/* margin-top: 300rpx;
+margin-left: 64rpx; */
+  display: inline-block;
+}
+
+image{
+  width: 288rpx;
+  height: 304rpx;
+  margin-top: 20rpx;
+  margin-right: 50rpx;
+  /* margin-right: 50rpx;
+  margin-top: 80rpx; */
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login {
+  margin-top: 60rpx;
+  width: 622rpx;
+  height: 110rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(103deg, #FFBC7B 0%, #FF8F1F 100%);
+  box-shadow: 0rpx 23.04rpx 22.06rpx 0rpx rgba(21, 31, 48, 0.04);
+  color: #FFFFFF;
+}

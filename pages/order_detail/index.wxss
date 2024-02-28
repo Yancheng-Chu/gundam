@@ -1,0 +1,367 @@
+.back {
+  position: fixed;
+  z-index: 3;
+  left: 10rpx;
+  top: 110rpx;
+}
+
+.main {
+  background: #f8f8f8;
+  height: 1600rpx;
+}
+
+.mine_logo {
+  position: fixed;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 160rpx;
+  width:100%;
+}
+
+.finish_icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 40rpx 0 0rpx 30rpx;
+}
+
+.finish {
+  margin: 30rpx 0 0rpx 0;
+  font-size: 40rpx;
+}
+
+.card {
+  margin: 20rpx 30rpx;
+  background: #fff;
+  border-radius: 26rpx;
+  vertical-align: top;
+  padding: 30rpx;
+}
+
+.designer_logo {
+  width: 32rpx;
+  height: 32rpx;
+  margin: 0 0 20rpx 0;
+}
+
+.designer {
+  margin: -4rpx 0 20rpx 0;
+}
+
+.status {
+  /* margin: 14rpx; */
+  text-align: right;
+  font-size: 28rpx;
+  color: #FC8843;
+}
+
+.logo {
+  width: 7rem;
+  height: 5rem;
+  border-radius: 10rpx;
+}
+
+.option {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.time {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #888;
+  /* border:1px solid; */
+}
+
+.sum {
+  display: inline-block;
+  /* border:1px solid; */
+  font-size: 24rpx;
+  margin: 0rpx 20rpx;
+}
+
+.price {
+  display: inline-block;
+  text-align: right;
+  font-size: 28rpx;
+  font-weight: 700;
+  /* border:1px solid; */
+  /* margin: 2px 0; */
+}
+
+.divider {
+  margin: 20rpx 0 20rpx 0;
+  border-top: 4rpx dotted #ccc;
+  height: 2rpx;
+}
+
+.qr {
+  width: 10rem;
+  height: 10rem;
+  margin-left: calc(50% - 5rem);
+}
+
+.btn_box {
+  padding-top: 20rpx;
+}
+
+.applyWithdraw,
+.applyFinish {
+  background: #fff;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  height: 36rpx;
+  border-radius: 30rpx;
+  border: 2rpx solid;
+  padding: 6rpx 24rpx;
+  margin-top: 20rpx;
+}
+
+.applyFinish {
+  margin-left: 40rpx;
+}
+
+.wait {
+  /* font-family: 'PingFang SC'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28rpx;
+}
+
+.save {
+  /* font-family: 'PingFang SC'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28rpx;
+}
+
+.ordertitle {
+  /* font-family: 'PingFang SC'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+}
+
+.ordermessage {
+  margin-top: 10rpx;
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24rpx;
+}
+
+/* 简略写法 */
+
+.hide {
+  display: none;
+}
+
+.in {
+  display: inline-block;
+}
+
+.mt5 {
+  margin-top: 10rpx;
+}
+
+.mt10 {
+  margin-top: 20rpx;
+}
+
+.mt20 {
+  margin-top: 40rpx;
+}
+
+.mt30 {
+  margin-top: 60rpx;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml30 {
+  margin-left: 60rpx;
+}
+
+.m0 {
+  margin: 0;
+  border: 2rpx solid red;
+}
+
+.ml20 {
+  margin-right: 40rpx;
+}
+
+.pb20 {
+  padding-bottom: 40rpx;
+}
+
+.pb30 {
+  padding-bottom: 60rpx;
+}
+
+.pb60 {
+  padding-bottom: 120rpx;
+}
+
+.f14 {
+  font-size: 28rpx;
+}
+
+.f16 {
+  font-size: 32rpx;
+}
+
+.f18 {
+  font-size: 36rpx;
+}
+
+.f20 {
+  font-size: 40rpx;
+}
+
+.f24 {
+  font-size: 48rpx;
+}
+
+.f30 {
+  font-size: 60rpx;
+}
+
+.w1 {
+  width: 20rpx;
+}
+
+.w2 {
+  width: 40rpx;
+}
+
+.w10 {
+  width: 200rpx;
+}
+
+.w23_5 {
+  width: 470rpx;
+}
+
+.h0 {
+  height: 0rpx;
+}
+
+.h1 {
+  height: 20rpx;
+}
+
+.h2 {
+  height: 40rpx;
+}
+
+.h13 {
+  height: 260rpx;
+}
+
+.p10 {
+  display: inline-block;
+  width: 10%;
+}
+
+.p15 {
+  display: inline-block;
+  width: 15%;
+}
+
+.p20 {
+  display: inline-block;
+  width: 20%;
+}
+
+.p25 {
+  display: inline-block;
+  width: 25%;
+}
+
+.p30 {
+  display: inline-block;
+  width: 27%;
+}
+
+.p50 {
+  display: inline-block;
+  width: 50%;
+}
+
+.p55 {
+  display: inline-block;
+  width: 55%;
+}
+
+.p60 {
+  display: inline-block;
+  width: 60%;
+}
+
+.p65 {
+  display: inline-block;
+  width: 65%;
+}
+
+.p70 {
+  display: inline-block;
+  width: 70%;
+}
+
+.bd {
+  border: 2rpx solid;
+}
+
+.br8 {
+  border-radius: 16rpx;
+}
+
+.v {
+  vertical-align: top;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.lg {
+  background: linear-gradient(90deg, #F68B64 0%, #7510FF 98.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: #ccc;
+}
+
+.gray2 {
+  color: #888;
+}
+
+.gray3 {
+  color: #ddd;
+}

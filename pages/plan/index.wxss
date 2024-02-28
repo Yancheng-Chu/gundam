@@ -1,0 +1,568 @@
+/* for page/index */
+.back{
+  position:fixed;
+  z-index: 3;
+  left:10rpx;
+  top:110rpx;
+}
+.card,
+.card-on {
+  display: inline-block;
+  margin: 20rpx 0 20rpx 40rpx;
+  padding: 20rpx;
+  width: calc(50% - 100rpx);
+  height: 120rpx;
+  background: #FBFBFB;
+  border-radius: 16rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 2rpx solid #fff;
+}
+
+.card-on {
+  border: 2rpx solid #FC8843;
+  background: #fff;
+}
+
+.card-large {
+  display: inline-block;
+  margin: 20rpx 0 20rpx 40rpx;
+  padding: 20rpx;
+  width: calc(100% - 60px);
+  height: 120rpx;
+  font-size: 28rpx;
+  /* background: linear-gradient(to right,#F68B64,  #7510FF); */
+  border-radius: 16rpx;
+
+  border: 2rpx solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(45deg, #fff, #fff), linear-gradient(90deg, #F68B64, #7510FF);
+}
+
+.small {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.middle {
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+
+.party_type {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50%;
+  margin-top: 44rpx;
+
+  /* font-family: 'PingFang SC'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+
+.popup-title {
+  display: block;
+  margin: 40rpx;
+  font-size: 40rpx;
+}
+
+.popup-confirm {
+  font-style: normal;
+  font-weight: 1600rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.popup-content {
+  display: block;
+  margin: 20rpx 40rpx;
+}
+
+.popup-input {
+  padding: 20rpx 40rpx;
+  margin: 40rpx;
+  background: #f0f0f0;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+}
+
+.popup-button,
+.popup-button-cancle,
+.popup-button1,
+.popup-button2 {
+  height: 80rpx;
+  margin: 40rpx 40rpx;
+  width: calc(100% - 80rpx);
+  border-radius: 40rpx;
+  font-size: 32rpx;
+}
+
+.popup-button {
+  background: linear-gradient(90deg, #F68B64 0%, #7510FF 98.23%);
+  color: #fff;
+}
+
+.popup-button1 {
+  display: inline-block;
+  margin: 60rpx 0 0 40rpx;
+  width: calc(50% - 60rpx);
+
+  border: 2rpx solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(45deg, #fff, #fff), linear-gradient(90deg, #F68B64, #7510FF);
+
+  /* background: linear-gradient(90deg, #F68B64 0%, #7510FF 98.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; */
+}
+
+.popup-button2 {
+  display: inline-block;
+  margin: 60rpx 0 0 20rpx;
+  width: calc(50% - 60rpx);
+  background: linear-gradient(90deg, #F68B64 0%, #7510FF 98.23%);
+  color: #fff;
+}
+
+.party-time,
+.party-time-on {
+  margin: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.party-time-on {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 16rpx;
+}
+
+.popup-diy {
+  display: inline-table;
+  margin-left: 40rpx;
+  margin-bottom: 20rpx;
+  width: calc(50% - 54rpx);
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 32rpx;
+  border: 2rpx solid gray;
+  text-align: center;
+  border-radius: 20rpx;
+}
+
+.popup-diy:nth-child(odd) {
+  margin-left: 20rpx;
+}
+
+.diy-on {
+  background: linear-gradient(90deg, #F68B64 0%, #7510FF 98.23%);
+  color: #fff;
+}
+
+.pdhd {
+  display: inline-block;
+  width: 430rpx;
+  margin-left: -470rpx;
+  margin-top: 236rpx;
+  padding: 20rpx;
+  font-weight: 600;
+  /* color:#000; */
+  background: rgba(255, 255, 255, 0.64);
+  backdrop-filter: blur(64rpx);
+  border-radius: 0rpx 0rpx 16rpx 16rpx;
+  vertical-align: top;
+}
+
+.point0,
+.point1 {
+  display: inline-block;
+  margin-left: 6rpx;
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  background: rgba(255, 255, 255);
+  vertical-align: bottom;
+}
+
+.point1 {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.more {
+  width: 40rpx;
+  height: 8rpx;
+}
+
+.more2 {
+  margin-top: -12rpx;
+}
+
+/* plan  */
+.plan_logo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 700rpx;
+}
+
+.plan_title {
+  position: fixed;
+  z-index: 1;
+  top: 630rpx;
+  padding: 38rpx 32rpx;
+  width: 100%;
+  height:172rpx;
+  /* font-family: 'PingFang SC'; */
+  font-style: normal;
+  font-weight: 600;
+  background: #77A68A;
+  color: #fff;
+}
+
+.line {
+  height: 2rpx;
+  margin: 50rpx 0 40rpx 0;
+  width: calc(100% - 72rpx);
+  background: #ccc;
+}
+
+.xuanpei_btn {
+  margin-right: 68rpx;
+  margin-top: -40rpx;
+  margin-bottom: 0rpx;
+  background: #fff;
+  color: #FC8843;
+  font-size: 24rpx;
+  /* font-family: 'PingFang SC'; */
+  font-style: normal;
+  font-weight: 500;
+  width: 120rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  border-radius: 30rpx;
+}
+
+.plans{
+  position:absolute;
+  z-index: 2;
+  top:880rpx;
+  width:100%;
+  padding-bottom:320rpx;
+  background:#fff;
+}
+.pay{
+  position:fixed;
+  z-index: 3;
+  bottom: 0;
+  font-size: 20rpx;
+  color:#999;
+  border-top:2rpx solid #eee;
+  width:100%;
+  height:200rpx;
+  background:rgba(255,255,255,1);
+  padding:20rpx;
+}
+.enter_logo{
+  position: absolute;
+  left:96rpx;
+  top:24rpx;
+}
+
+.query_logo{
+  position: absolute;
+  left:208rpx;
+  top:24rpx;
+}
+.enter_text{
+  position: absolute;
+  left:200rpx;
+  top:88rpx;
+}
+.query_text{
+  position: absolute;
+  left:212rpx;
+  top:88rpx;
+}
+.payment{
+  position: absolute;
+  font-weight: 500;
+  color: #FC8843;
+  text-align:center;
+  width:168rpx;
+  height:64rpx;
+  line-height: 64rpx;
+  border-radius: 200rpx;
+  background:#f2f2f2;
+  right:124rpx;
+  top:34rpx;
+}
+/* 各种选项 */
+.plan_card {
+  box-shadow: 0 0 12rpx #888;
+  /* filter: drop-shadow(0rpx 0rpx 32rpx rgba(0, 0, 0, 0.25)); */
+}
+
+.plan_image {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.plan_price_box {
+  position: relative;
+  margin-left: calc(100% - 126rpx);
+  margin-top: -492rpx;
+  height: 492rpx;
+}
+
+.plan_price {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0rpx 16rpx;
+  color: #fff;
+  text-align: center;
+  width:126rpx;
+  height:48rpx;
+}
+.duration{
+  /* margin-top:-30rpx; */
+}
+/* 简略写法 */
+
+.hide {
+  display: none;
+}
+
+.in {
+  display: inline-block;
+}
+
+.mt5 {
+  margin-top: 10rpx;
+}
+
+.mt10 {
+  margin-top: 20rpx;
+}
+
+.mt20 {
+  margin-top: 40rpx;
+}
+
+.mt30 {
+  margin-top: 69rpx;
+}
+
+.ml10 {
+  margin-left: 20rpx;
+}
+
+.ml15 {
+  margin-left: 30rpx;
+}
+
+.ml20 {
+  margin-left: 40rpx;
+}
+
+.ml30 {
+  margin-left: 60rpx;
+}
+
+.m0 {
+  margin: 0;
+  border: 2rpx solid red;
+}
+
+.ml20 {
+  margin-right: 40rpx;
+}
+
+.pb18 {
+  padding-bottom: 36rpx;
+}
+.pb20 {
+  padding-bottom: 40rpx;
+}
+
+.pb30 {
+  padding-bottom: 60rpx;
+}
+
+.pb60 {
+  padding-bottom: 120rpx;
+}
+
+.f14 {
+  font-size: 28rpx;
+}
+
+.f16 {
+  font-size: 32rpx;
+}
+
+.f18 {
+  font-size: 36rpx;
+}
+
+.f20 {
+  font-size: 40rpx;
+}
+
+.f24 {
+  font-size: 48rpx;
+}
+
+.f30 {
+  font-size: 60rpx;
+}
+.f32 {
+  font-size: 64rpx;
+}
+
+.fw600{
+  font-weight: 600;
+}
+.w1 {
+  width: 20rpx;
+}
+
+.w2 {
+  width: 40rpx;
+}
+
+.w24{
+  width:48rpx;
+}
+
+.w10 {
+  width: 200rpx;
+}
+
+.w23_5 {
+  width: 470rpx;
+}
+
+.h0 {
+  height: 0rpx;
+}
+
+.h1 {
+  height: 20rpx;
+}
+
+.h2 {
+  height: 40rpx;
+}
+
+.h24 {
+  height: 48rpx;
+}
+.h3{
+  height: 60rpx;
+}
+
+
+.h13 {
+  height: 260rpx;
+}
+
+.p10 {
+  display: inline-block;
+  width: 10%;
+}
+
+.p15 {
+  display: inline-block;
+  width: 15%;
+}
+
+.p20 {
+  display: inline-block;
+  width: 20%;
+}
+
+.p25 {
+  display: inline-block;
+  width: 25%;
+}
+
+.p30 {
+  display: inline-block;
+  width: 27%;
+}
+
+.p50 {
+  display: inline-block;
+  width: 50%;
+}
+
+.p55 {
+  display: inline-block;
+  width: 55%;
+}
+
+.p60 {
+  display: inline-block;
+  width: 60%;
+}
+
+.p65 {
+  display: inline-block;
+  width: 65%;
+}
+
+.p70 {
+  display: inline-block;
+  width: 70%;
+}
+
+.bd {
+  border: 2rpx solid;
+}
+
+.br8 {
+  border-radius: 16rpx;
+}
+
+.v {
+  vertical-align: top;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.lg {
+  background: linear-gradient(90deg, #F68B64 0%, #7510FF 98.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: #ccc;
+}
+
+.gray2 {
+  color: #999;
+}
+
+.gray3 {
+  color: #ddd;
+}

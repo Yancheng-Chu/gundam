@@ -1,0 +1,23 @@
+/* custom-tab-bar/index.wxss */
+.tabBarContainer{
+  box-sizing: border-box;
+  height: 168rpx;
+  padding: 8rpx 142rpx 0 132rpx;
+  /* background: rgba(255, 255, 255, 0.88); */
+  background: #e7c39f;
+  box-shadow: 0rpx -1rpx 0rpx 0rpx rgba(0, 0, 0, .1);
+  border-top: 2rpx solid #F6F6F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tabBarItem image{
+  width: 152rpx;
+  height: 152rpx;
+}
+
+.secondImage{
+width: 162rpx !important;
+height: 112rpx;
+}

@@ -1,0 +1,14 @@
+<view class='title'><van-icon name="arrow-left" style="margin-right: 30rpx;" bindtap="back"/>请填写公司信息</view>
+
+<view class="card">
+<view class="account">
+公司名称
+<input class="a" type='text' bindinput="cName" value="{{company}}"/>
+</view>
+<view class="password">
+联系电话
+<view class="pp">（此处为必须填写）</view>
+<input class="p" type='number' maxlength="11" bindinput="cPhone" value="{{phone}}"/>
+</view>
+</view>
+<button class='login' bindtap='jump' disabled="{{isDisabled}}" style="opacity:{{opacity}}">确认</button>

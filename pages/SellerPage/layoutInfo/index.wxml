@@ -1,0 +1,31 @@
+<view class="navigationBar">
+  <view class="row">
+    <van-icon name="arrow-left" size="50rpx" bindtap="back" color="white" />
+    <text class="pageName">基本信息</text>
+  </view>
+</view>
+
+<view class="infoContainer">
+  <view class="sitePic">
+    <view class="header">
+      <text class="star">*</text>
+      <text class="title">展示图片：</text>
+    </view>
+    <van-uploader catch:delete="deleteImg" multiple deletable="false" max-count="6" file-list="{{ fileList }}" bind:after-read="afterRead"></van-uploader>
+  </view>
+
+  <view class="infoCard">
+    <view class="header">
+      <text class="star">*</text>
+      <text class="title">布置名称：</text>
+      <input type="text" model:value="{{name}}" placeholder="请输入" placeholder-class="placeholder" />
+    </view>
+  </view>
+
+  <view class="basicInfo">
+    <view class="title">详细信息：</view>
+    <textarea maxlength="500" model:value="{{info}}" auto-height cols="30" rows="10"></textarea>
+  </view>
+
+  <button class="btn" bindtap="submit">完成</button>
+</view>

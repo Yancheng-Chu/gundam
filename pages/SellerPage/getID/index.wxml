@@ -1,0 +1,22 @@
+<view class="navBar">
+  <van-icon name="arrow-left" class='backBtn' size="50rpx" bindtap="back" />
+  <view class="navTitle">身份认证</view>
+</view>
+
+<view class='card'>
+  <van-uploader catch:delete="deleteImg" multiple deletable="false" max-count="1" file-list="{{ IDList }}" bind:after-read="afterRead"
+  accept="image">
+    <image src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/front.png' />
+  </van-uploader>  
+  <view class='f'>上传人像页</view>
+  <van-uploader  catch:delete="deleteImg2" multiple deletable="false" max-count="1" file-list="{{ IDList2 }}" bind:after-read="afterRead2"
+  accept="image">
+    <image src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/backI.png' />
+  </van-uploader>
+  <view class='b'>上传国徽页</view>
+  <van-checkbox value="{{ checked }}" shape="square" bind:change="onChange" checked-color="#FF8F1F"
+  custom-class="check" icon-size="34rpx">
+  我已阅读并同意 <view style="color:#87CEFA;display: inline-block;" bindtap="privacy"> 《隐私政策》</view>及<view style="color:#87CEFA;display: inline-block;" bindtap="sla"> 《用户服务协议》</view>
+</van-checkbox>
+</view>
+<button class='login' bindtap='jump' disabled="{{isDisabled}}" style="opacity:{{opacity}}" data-title="身份认证" >确认</button>

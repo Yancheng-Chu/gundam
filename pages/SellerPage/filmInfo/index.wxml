@@ -1,0 +1,48 @@
+<view class="navigationBar">
+  <view class="row">
+    <van-icon name="arrow-left" size="50rpx" bindtap="back" color="white" />
+    <text class="pageName">基本信息</text>
+  </view>
+</view>
+
+<view class="infoContainer">
+  <view class="infoCard">
+    <view class="header" bindtap="showPopup">
+      <text class="star">*</text>
+      <text class="title">拍摄种类：</text>
+      <view class="select">
+        <text>{{type ? type : '请选择'}}</text>
+        <van-icon name="arrow" size="48rpx" />
+      </view>
+    </view>
+  </view>
+
+  <view class="infoCard">
+    <view class="header">
+      <text class="star">*</text>
+      <text class="title">拍摄风格：</text>
+      <input type="text" model:value="{{style}}" placeholder="请输入" placeholder-class="placeholder" />
+    </view>
+  </view>
+
+  <view class="sitePic">
+    <view class="header">
+      <text class="star">*</text>
+      <text class="title">成品案例：</text>
+    </view>
+    <van-uploader catch:delete="deleteImg" multiple deletable="false" max-count="6" file-list="{{ fileList }}" bind:after-read="afterRead"></van-uploader>
+  </view>
+
+  <view class="basicInfo">
+    <view class="title">其他信息：</view>
+    <textarea maxlength="500" model:value="{{info}}" auto-height cols="30" rows="10"></textarea>
+  </view>
+
+  <button class="btn" bindtap="submit">完成</button>
+</view>
+
+
+<van-popup round show="{{ show }}" bind:close="onClose" position="bottom" custom-style="padding: 0;">
+  <van-picker default-index="{{ type == '摄像' ? 1 : 0}}" columns="{{ columns }}" bind:change="onChange" />
+  <button bindtap="onClose" class="closeBtn">确定</button>
+</van-popup>

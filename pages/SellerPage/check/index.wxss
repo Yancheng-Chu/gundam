@@ -1,0 +1,107 @@
+page{
+  background: #F7F7F7;
+}
+.navBar {
+  width: 100%;
+  height: 240rpx;
+  background: #FF942A;
+}
+
+.navBar .backBtn{
+  margin-top:150rpx;
+  position: absolute;
+  margin-left:32rpx;
+}
+.navBar .navTitle {
+padding-top:150rpx;
+font-size: 36rpx;
+font-weight: 600;
+color: #FFFFFF;
+text-align: center;
+}
+/* image{
+  margin-top: 220rpx;
+  margin-left: 170rpx;
+  width: 440rpx;
+  height: 410rpx;
+}
+.check{
+  margin-top:80rpx;
+  margin-left: 270rpx;
+  font-size: 72rpx;
+  color: #4A4A4A;
+} */
+
+.text{
+  display:inline-block;
+  color:#737373;
+  font-size: 36rpx;
+}
+.tag{
+  display:inline-block;
+  color:#737373;
+  font-size: 36rpx;
+}
+image{
+  width: 48rpx;
+height: 48rpx;
+}
+.step{
+  text-align: center;
+}
+.stepII{
+  text-align: center;
+  margin-top: 120rpx;
+}
+.stepIII{
+  text-align: center;
+  margin-top: 112rpx;
+}
+.i{
+  position: absolute;
+  margin-left: -87rpx;
+}
+.ii{
+  display: inline-block;
+  color:#9E9E9E;
+  font-size: 36rpx;
+  font-weight: 550;
+}
+.ii .iii{
+  font-size: 28rpx;
+  font-weight: 50;
+  position: absolute;
+}
+.line{
+  position: absolute;
+left: 221rpx;
+top: 76rpx;
+width: 2rpx;
+height: 120rpx;
+border: 2rpx solid #D8D8D8;
+}
+.line2{
+  position: absolute;
+left: 221rpx;
+top: 240rpx;
+width: 2rpx;
+height: 120rpx;
+border: 2rpx solid #D8D8D8;
+}
+.time{
+  position: absolute;
+  margin-left: -10rpx;
+  font-size: 26rpx;
+}
+.time .time2{
+  text-align: end;
+}
+.steps{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  font-weight: 50;
+  color:#9E9E9E;
+  margin-left:20rpx
+}
+
+

@@ -1,0 +1,7 @@
+<!--custom-tab-bar/index.wxml-->
+<View class="tabBarContainer" bindtap="close">
+  <view class="tabBarItem" wx:for="{{list}}" wx:key="index" data-path="{{item.pagePath}}" bindtap="switchTab">
+    <image src="{{selected == index ? item.selectedIconPath : item.iconPath}}" class="{{index==1 ? 'secondImage' : ''}}"></image>
+    <!-- <text>{{item.text}}</text> -->
+  </view>
+</View>

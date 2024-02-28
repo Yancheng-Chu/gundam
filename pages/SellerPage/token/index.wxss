@@ -1,0 +1,59 @@
+.title {
+  position: absolute;
+  left: 34rpx;
+  top: 188rpx;
+  width: 622rpx;
+  height: 68rpx;
+  font-size: 64rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: 550;
+}
+
+.account {
+  margin-top: 320rpx;
+  font-size: 32rpx;
+  font-weight: 50;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.account .send {
+  color: #9E9E9E;
+  font-size: 24rpx;
+}
+
+.t {
+  margin-top: 64rpx;
+  margin-left: 64rpx;
+  display: flex;
+  flex-flow: row;
+}
+
+.t .a {
+  margin-right: 30rpx;
+  width: 136rpx;
+  height: 136rpx;
+  border-radius: 20rpx;
+  background: #F2F5FF;
+  box-shadow: 0rpx 8rpx 0rpx -2rpx #FF8F1F;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login {
+  margin-top: 100rpx;
+  width: 622rpx;
+  height: 110rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(103deg, #FFBC7B 0%, #FF8F1F 100%);
+  box-shadow: 0rpx 23.04rpx 22.06rpx 0rpx rgba(21, 31, 48, 0.04);
+  color: #FFFFFF;
+}

@@ -1,0 +1,19 @@
+<view class="navBar">
+  <van-icon name="arrow-left" class='backBtn' size="50rpx" bindtap="goBack" />
+  <view class="navTitle">我的订单</view>
+</view>
+  <view class="tab" bindtap="tab">
+    <van-row>
+      <van-col class="{{tab=='全部'?'focu':'blur'}}" span="6" data-name="全部">全部</van-col>
+      <van-col class="{{tab=='已报价'?'focu':'blur'}}" span="6" data-name="已报价">已报价</van-col>
+      <van-col class="{{tab=='已接单'?'focu':'blur'}}" span="6" data-name="已接单">已接单</van-col>
+      <van-col class="{{tab=='已完成'?'focu':'blur'}}" span="6" data-name="已完成">已完成</van-col>
+    </van-row>
+  </view>
+  <view class="serviceCard" bindtap="jumpToArea" wx:for="{{orders}}" wx:key="index" data-id="{{item.listId}}" data-status="{{item.order_status}}">
+      <view class="serviceItem">
+      <view class='title'>派对类型: {{item.party_type}}</view>
+      <text class='detail' space="ensp">预算: {{item.budget}}元\n发布时间: {{item.orderTime}}</text>
+      <view class='more'>{{item.order_status}}</view>
+    </view>
+</view>

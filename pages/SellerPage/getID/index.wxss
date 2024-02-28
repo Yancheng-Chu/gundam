@@ -1,0 +1,77 @@
+page{
+  background: #F7F7F7;
+}
+.navBar {
+  width: 100%;
+  height: 240rpx;
+  background: #FF942A;
+}
+
+.navBar .backBtn{
+  margin-top:150rpx;
+  position: absolute;
+  margin-left:32rpx;
+}
+.navBar .navTitle {
+padding-top:150rpx;
+font-size: 36rpx;
+font-weight: 600;
+color: #FFFFFF;
+text-align: center;
+}
+
+
+.card{
+  margin-top: 50rpx;
+  margin-left: 68rpx;
+}
+
+image{
+  width: 622rpx;
+  height: 314rpx;
+  margin-bottom: 40rpx;
+}
+.f{
+  margin-left: 224rpx;
+  margin-bottom: 40rpx;
+  color:#2381F4
+}
+.f:before{
+  content:'*';
+  color:red
+}
+.b{
+  margin-left: 224rpx;
+  color:#2381F4
+}
+.b:before{
+  content:'*';
+  color:red
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.check{
+  margin-top: 80rpx;
+  font-size: 26rpx;
+}
+.login {
+  margin-top: 80rpx;
+  width: 622rpx;
+  height: 120rpx;
+  border-radius: 188rpx;
+  background: linear-gradient(103deg, #FFBC7B 0%, #FF8F1F 100%);
+  box-shadow: 0rpx 23.04rpx 22.06rpx 0rpx rgba(21, 31, 48, 0.04);
+  color: #FFFFFF;
+}
+
+.van-uploader__preview-image {
+  display: block;
+  height: var(--uploader-size,310rpx) !important;
+  overflow: hidden;
+  width: var(--uploader-size,620rpx) !important;
+}

@@ -1,0 +1,432 @@
+/* pages/planDetail/index.wxss */
+page {
+  background: #F8F8F8;
+}
+
+.planSwiper {
+  height: 606rpx;
+}
+
+.planSwiperItem {
+  position: relative;
+}
+
+.planSwiperItem .swiperPic {
+  width: 100%;
+  height: 100%;
+}
+
+.planSwiperItem .footNote {
+  width: 70rpx;
+  height: 44rpx;
+  border-radius: 22rpx;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 40rpx;
+  bottom: 40rpx;
+  text-align: center;
+  font-size: 20rpx;
+  line-height: 44rpx;
+  color: #FFFFFF;
+}
+
+.planContainer {
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  padding-bottom: 192rpx;
+}
+
+.planContainer .planNameCard {
+  box-sizing: border-box;
+  height: 140rpx;
+  border-radius: 16rpx;
+  background: #FFFFFF;
+  margin: 40rpx 0 24rpx 0;
+}
+
+.planNameCard .planName {
+  padding-top: 32rpx;
+  display: block;
+  margin: 0 24rpx 20rpx 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.planNameCard .RMB {
+  margin-left: 24rpx;
+  margin-right: 4rpx;
+  display: inline-block;
+  color: #F68B64;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.planNameCard .cost {
+  display: inline-block;
+  font-size: 36rpx;
+  line-height: 36rpx;
+  color: #F68B64;
+}
+
+.planDetailCard {
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  height: 276rpx;
+  border-radius: 16rpx;
+  background: #FFFFFF;
+}
+
+.planDetailCard .planDetailItem {
+  box-sizing: border-box;
+  height: 92rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.planDetailCard .planDetailItem:last-child {
+  border: none;
+}
+
+.planDetailItem .title {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #999999;
+  margin-right: 24rpx;
+}
+
+.planDetailItem .content {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #333333;
+}
+
+.planDetailItem van-icon {
+  position: absolute;
+  right: 0;
+}
+
+.storeCard {
+  height: 150rpx;
+  border-radius: 32rpx;
+  background: #FFFFFF;
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+}
+
+.storeCard .storeIcon {
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 64rpx;
+  margin-left: 24rpx;
+  margin-right: 16rpx;
+}
+
+.storeCard .storeDetail {
+  width: 398rpx;
+  height: 92rpx;
+  margin-right: 16rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.storeDetail .storeName {
+  width: 100%;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 28rpx;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.storeDetail .storeInfo {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0;
+  height: 24rpx !important;
+}
+
+.van-rate__item {
+  --rate-icon-gutter: 0;
+  --rate-horizontal-padding: 0;
+}
+
+.storeInfo .score {
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 24rpx;
+  color: #FC8843;
+  margin-left: 12rpx;
+  margin-right: 20rpx;
+}
+
+.storeInfo .district {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #666666;
+}
+
+.storeInfo .border {
+  margin: 0 12rpx;
+  width: 2rpx;
+  height: 24rpx;
+  background-color: #EEEEEE;
+}
+
+.storeInfo .distance {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #666666;
+}
+
+.storeDetail .openingHours {
+  display: flex;
+}
+
+.openingHours text {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  color: #333333;
+  margin-right: 16rpx;
+}
+
+.storeCard .enterStore {
+  box-sizing: border-box;
+  width: 88rpx;
+  height: 44rpx;
+  border-radius: 200rpx;
+  border: 1rpx solid #666666;
+  text-align: center;
+  text-align: center;
+  font-size: 20rpx;
+  line-height: 42rpx;
+  color: #666666;
+  margin-right: 40rpx;
+}
+
+.scheduleCard {
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  margin-top: 72rpx;
+  height: 440rpx;
+  border-radius: 16rpx;
+  background: #FFFFFF;
+}
+
+.scheduleCard .scheduleRow {
+  box-sizing: border-box;
+  height: 88rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  display: flex;
+  align-items: center;
+}
+
+.scheduleCard .scheduleRow:last-child {
+  border: none;
+}
+
+.scheduleRow .time {
+  box-sizing: border-box;
+  width: 220rpx;
+  border-right: 1rpx solid #EEEEEE;
+  font-size: 24rpx;
+  line-height: 86rpx;
+  color: #000000;
+  text-align: center;
+}
+
+.scheduleRow .eventName {
+  flex: 1;
+  font-size: 24rpx;
+  color: #000000;
+  text-align: center;
+}
+
+.partyDetail {
+  height: 72rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partyDetail text {
+  font-size: 24rpx;
+  color: #666666;
+  margin: 0 8rpx;
+}
+
+.partyDetail .line {
+  width: 64rpx;
+  height: 2rpx;
+  background-color: #EEEEEE;
+}
+
+.partyDetailCard {
+  box-sizing: border-box;
+  border-radius: 16rpx;
+  background: #FFFFFF;
+  padding: 84rpx 32rpx 32rpx 32rpx;
+  position: relative;
+  margin-bottom: 16rpx;
+}
+
+.planContainer .partyDetailCard:nth-child(9) {
+  padding: 84rpx 32rpx 0 32rpx;
+}
+
+.partyDetailCard:last-child {
+  margin-bottom: 0;
+}
+
+.partyDetailCard .cardName {
+  position: absolute;
+  top: 32rpx;
+  left: 32rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 32rpx;
+  color: #000000;
+  z-index: 10;
+}
+
+.partyDetailCard .box {
+  width: 144rpx;
+  height: 16rpx;
+  background: linear-gradient(90deg, #FFF4F0 6%, #FF6F3F 98%);
+  position: absolute;
+  top: 52rpx;
+  left: 32rpx;
+  z-index: 0;
+}
+
+.partyDetailCard .eventSwiper {
+  overflow: hidden;
+  height: 360rpx;
+  border-radius: 8rpx;
+}
+
+.eventSwiperItem image {
+  width: 100%;
+  height: 100%;
+}
+
+.partyDetailCard .price {
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 32rpx;
+  color: #000000;
+  position: absolute;
+  top: 32rpx;
+  right: 36rpx;
+}
+
+.partyDetailCard .eventContainer {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 8rpx;
+  position: relative;
+  margin-bottom: 16rpx;
+}
+
+.eventContainer .eventPrice {
+  position: absolute;
+  top: 16rpx;
+  right: 16rpx;
+  width: 126rpx;
+  height: 48rpx;
+  border-radius: 23rpx;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 48rpx;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.eventContainer image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+.eventContainer .eventType {
+  box-sizing: border-box;
+  padding-left: 32rpx;
+  width: 100%;
+  height: 72rpx;
+  border-radius: 0 0 8rpx 8rpx;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 72rpx;
+  color: #000000;
+}
+
+.partyDetailCard .dishesList .dish {
+  box-sizing: border-box;
+  height: 88rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  font-size: 24rpx;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partyDetailCard .dishesList .dish:first-child {
+  height: 104rpx;
+}
+
+.partyDetailCard .dishesList .dish:last-child {
+  border: 0;
+}
+
+.footer {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 176rpx;
+  background: #FFFFFF;
+  padding: 24rpx 40rpx 0 40rpx;
+  display: flex;
+  align-items: flex-start;
+  z-index: 99;
+}
+
+.footer .phoneContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 54rpx;
+}
+
+.phoneContact text {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #000000;
+  margin-top: 10rpx;
+}
+
+.footer .onlineContact {
+  width: 520rpx;
+  height: 84rpx;
+  border-radius: 40rpx 76rpx 76rpx 8rpx;
+  background: #FC8843;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 84rpx;
+  color: #FFFFFF;
+}

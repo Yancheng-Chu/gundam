@@ -1,0 +1,31 @@
+<view class="title ab">小队成员面板</view>
+<view class="s ab">
+  <image class="img" src="/resource/17.png" />
+</view>
+<view class="s1 ab">
+  <image class="img" src="/resource/17.png" />
+</view>
+<view class="s2 ab">
+  <image class="img" src="/resource/17.png" />
+</view>
+
+<view class="skill ab">机师技能：
+  来自🐷的诅咒
+  <view>技能效果：XXXXXXXXXXXXXXXXXXXXXX</view>
+  <view>机师被动：XXXXXXXXXXXXXXXXXXXXXX</view>
+</view>
+
+<button class="submit ab"> 发动 </button>
+
+<view class="infor" />
+<image class="fight" src="/resource/18.png" />
+
+<swiper class="storeSwiper" next-margin="150rpx" previous-margin="220rpx" current="1">
+  <block wx:for="{{4}}">
+    <swiper-item>
+      <view class="card">
+        <image class='src' src="/resource/16.png"></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

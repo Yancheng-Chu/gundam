@@ -1,0 +1,22 @@
+<view wx:if="{{log}}">
+<view class="mineLogo">
+  <view class='title'>小狸猫想要知道你的生日</view>
+  </view>
+<image class="lai" src="/resource/3.png"/>
+<image class="lai2" src="/resource/14.png"/>
+<view class="mineContainer">
+  <view class="infoCard">
+    <!-- <view class="avatar" bindtap="login">
+      <image src="/resource/11.png"></image>
+    </view> -->
+    <view class="card">
+      <view class="account">
+        <input class="a" type='safe-password' placeholder="请输入生日" bindinput="birthday"/>
+      </view>
+      <button class='login' bindtap="jump" data-birth='{{birth}}'>点击发送祝福</button>
+    </view>
+  </view>
+</view>
+<image class="hap" src="/resource/11.png"></image>
+<image class="su" src="/resource/9.png" />
+</view>

@@ -1,0 +1,87 @@
+<van-icon style="margin-top: 120rpx; margin-left: 40rpx; position:fixed; z-index: 1;" name="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/back.png" size="50rpx" bindtap="goBack" />
+<image class="cover" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/cover.png" />
+<view class="card">
+  <image class="logo" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/logo.png" />
+  <view class='title'>
+    <!-- 梦想家生日派对 -->
+    {{title}}
+  </view>
+  <!-- <view class='title2'>
+    专为宝宝打造的生日派对
+  </view> -->
+  <button class='online' catchtap="showQRCodePopup">
+    在线联系
+  </button>
+  <button class='phone' hover-class="none" catchtap="handlePhoneCall">
+    电话联系
+  </button>
+
+  <view class='line' />
+  <view class='detail'>
+    <van-row class='value'>
+      <van-col span="6">4626个评分</van-col>
+      <van-col span="6">可容纳人数</van-col>
+      <van-col span="6">营业时间</van-col>
+      <van-col span="6">开店年限</van-col>
+    </van-row>
+  </view>
+  <view style="margin-top:18rpx;">
+    <van-row class='capacity' style="color:#FFAF7B">
+      <van-col span="6" custom-class='mid'>{{evaluate}}</van-col>
+      <van-col span="6" custom-class='mid'>{{person}}</van-col>
+      <!-- <van-col span="6">10-22</van-col> -->
+      <van-col span="6" style="font-size: 22rpx;">白天{{am}} 过夜{{pm}}</van-col>
+      <van-col span="6" custom-class='mid'>10+</van-col>
+    </van-row>
+  </view>
+  <view style="margin-top:18rpx">
+    <van-row class='unit'>
+      <van-col span="6">
+        <van-rate allow-half readonly value="{{star}}" size="24rpx" icon="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/star-o.png" void-icon="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/star.png" gutter="0rpx" />
+      </van-col>
+      <van-col span="6">人</van-col>
+      <van-col span="6">周一至周日</van-col>
+      <van-col span="6">年</van-col>
+    </van-row>
+  </view>
+</view>
+
+<swiper class="storeSwiper" indicator-color="rgba(255, 255, 255, 0.6)" indicator-active-color="#FFFFFF" interval="1000" next-margin="25rpx" previous-margin="70rpx" current="1">
+  <block wx:for="{{3}}">
+    <swiper-item>
+      <!-- <view style="background:red; width: 100%; height: 100%;"> -->
+      <image class='src' src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/detail1.png"></image>
+      <!-- </view> -->
+    </swiper-item>
+  </block>
+</swiper>
+<view class='location'>
+  <van-icon name="location-o" />
+  <!-- <view style="margin-left:10rpx">{{闵行区沪闵路中庚漫游城403}}</view> -->
+  <view style="margin-left:10rpx">{{place}}</view>
+  <!-- <van-icon name="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/go.png" style="margin-left:560rpx; position:absolute" /> -->
+</view>
+<view class='line2' />
+
+<view class='plan'>
+  <view class="plans">
+    店内套餐
+  </view>
+  <view class='more'>
+    <!-- 查看详细信息 -->
+  </view>
+  <view wx:for="{{4}}" class='pic' bindtap="toPlanDetail">
+    <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/plan1.png" />
+    <view class='plan_title'> 谁动了我的兔宝宝 </view>
+    <view class='plan_price'>¥3499</view>
+    <view class='old_price'>5899</view>
+  </view>
+</view>
+
+<van-popup show="{{ showQRCode }}" round closeable bind:close="onCloseQRCode">
+  <view class="QRCodeContent">
+    <view class="addCusSer">添加客服</view>
+    <view class="longTap">长按二维码添加客服</view>
+    <image show-menu-by-longpress class="qrCode" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/responseStore/qrCode.png"></image>
+  </view>
+</van-popup>

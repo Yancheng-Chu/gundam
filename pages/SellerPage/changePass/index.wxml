@@ -1,0 +1,13 @@
+<view class='title'><van-icon name="arrow-left" style="margin-right: 30rpx;" bindtap="back"/>修改密码</view>
+
+<view class="card">
+<view class="account">
+新密码
+<input class="a" type='safe-password' />
+</view>
+<view class="password">
+确认密码
+<input class="p" type='safe-password' />
+</view>
+</view>
+<button class='login' bindtap="jump" data-check='1'>确认</button>

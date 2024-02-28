@@ -1,0 +1,125 @@
+page {
+    background: #F7F7F7;
+}
+.title {
+  position: absolute;
+  left: 90rpx;
+  top: 160rpx;
+  width: 622rpx;
+  height: 68rpx;
+  font-size: 52rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: 550;
+}
+.lai{
+  position: absolute;
+  top:820rpx;
+  width: 400rpx;
+  height: 400rpx;
+}
+.lai2{
+  margin-left: 35rpx;
+  position: absolute;
+  height: 150rpx;
+  top:910rpx;
+  width: 800rpx;
+}
+.hap{
+  position: absolute;
+  /* margin-left: 110rpx; */
+  width: 100%;
+}
+.su{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  width: 440rpx;
+  margin-right: -20rpx;
+  margin-bottom: 150rpx;
+}
+
+.card {
+  margin-top: 30rpx;
+  margin-left: 14rpx;
+}
+
+.card .account {
+  font-size: 42rpx;
+  font-weight: 50;
+}
+
+.account .a {
+  padding-left: 40rpx;
+  margin-top: 25rpx;
+  width: 582rpx;
+  height: 110rpx;
+  border-radius: 40rpx;
+  background: #F2F5FF;
+  box-shadow: 0rpx 8rpx 0rpx -2rpx #FF8F1F;
+  margin-bottom: 60rpx;
+}
+
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login {
+  width: 622rpx;
+  height: 90rpx;
+  border-radius: 120rpx;
+  background: linear-gradient(103deg, #FFBC7B 0%, #FF8F1F 100%);
+  box-shadow: 0rpx 23.04rpx 22.06rpx 0rpx rgba(21, 31, 48, 0.04);
+  color: #FFFFFF;
+}
+
+.mineLogo {
+    position: relative;
+    height: 248rpx;
+    background: #FFF5EB;
+}
+
+.mineContainer {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    /* top: 676rpx; */
+    top:466rpx;
+    box-sizing: border-box;
+    padding: 0 32rpx;
+}
+
+.infoCard {
+    height: 336rpx;
+    background-color: #FFFFFF;
+    border-radius: 38rpx;
+    margin-bottom: 40rpx;
+    padding: 24rpx 24rpx 0 24rpx;
+    position: relative;
+    box-shadow: 0rpx 8rpx 32rpx rgba(255, 0, 0, 0.16);
+}
+
+.infoCard .avatar {
+    width: 138rpx;
+    height: 128rpx;
+    border-radius: 50%;
+    position: absolute;
+    left: 284rpx;
+    top: -40rpx;
+}
+
+.avatar image {
+    width: 112rpx;
+    height: 112rpx;
+    border-radius: 50%;
+    border: 4rpx solid #FC8843;
+}
+
+

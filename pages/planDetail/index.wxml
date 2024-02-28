@@ -1,0 +1,172 @@
+<!--pages/planDetail/index.wxml-->
+<swiper class="planSwiper" bindchange="onSlideChange" circular>
+  <swiper-item wx:for="{{7}}" class="planSwiperItem">
+    <image class="swiperPic" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+    <view class="footNote">{{currIndex}}/7</view>
+  </swiper-item>
+</swiper>
+
+<view class="planContainer">
+  <view class="planNameCard">
+    <text class="planName">特惠小场景优选布置套餐赠送主题蛋糕特惠小场景优选布置套餐赠送主题蛋糕</text>
+    <text class="RMB">￥</text>
+    <text class="cost">8000</text>
+  </view>
+
+  <view class="planDetailCard">
+    <view class="planDetailItem">
+      <text class="title">主题</text>
+      <text class="content">选择主题</text>
+      <van-icon color="#999999" name="arrow" size="24rpx" />
+    </view>
+
+    <view class="planDetailItem">
+      <text class="title">人数</text>
+      <text class="content">10人</text>
+    </view>
+
+    <view class="planDetailItem">
+      <text class="title">时长</text>
+      <text class="content">3小时·可加时(128/h)</text>
+    </view>
+  </view>
+
+  <view class="storeCard">
+    <image class="storeIcon" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+    <view class="storeDetail">
+      <text class="storeName">猴宝宝宴派对策划</text>
+      <view class="storeInfo">
+        <van-rate value="5" size="24rpx" color="#FC8843" void-icon="star" void-color="#eee" />
+        <text class="score">5.0</text>
+        <text class="district">静安区</text>
+        <view class="border"></view>
+        <text class="distance">4.5km</text>
+      </view>
+      <view class="openingHours">
+        <text>周一至周日</text>
+        <text>10:00-21:00</text>
+      </view>
+    </view>
+    <view class="enterStore">进店</view>
+  </view>
+
+  <view class="scheduleCard">
+    <view class="scheduleRow">
+      <view class="time">11:00-11:30</view>
+      <view class="eventName">迎宾/小丑气球派送</view>
+    </view>
+    <view class="scheduleRow">
+      <view class="time">11:30-12:00</view>
+      <view class="eventName">午餐</view>
+    </view>
+    <view class="scheduleRow">
+      <view class="time">12:00-12:40</view>
+      <view class="eventName">小丑魔术表演/小丑游戏</view>
+    </view>
+    <view class="scheduleRow">
+      <view class="time">12:40-13:30</view>
+      <view class="eventName">科学实验/恐龙互动</view>
+    </view>
+    <view class="scheduleRow">
+      <view class="time">13:30-14:30</view>
+      <view class="eventName">生日祝福仪式和蛋糕分享</view>
+    </view>
+  </view>
+
+  <view class="partyDetail">
+    <view class="line"></view>
+    <text>派对详情</text>
+    <view class="line"></view>
+  </view>
+
+  <view class="partyDetailCard">
+    <view class="cardName">费用明细</view>
+    <view class="box"></view>
+    <swiper class="eventSwiper" indicator-dots indicator-color="rgba(255, 255, 255, 0.6)" indicator-active-color="#FFFFFF" circular>
+      <swiper-item wx:for="{{4}}" class="eventSwiperItem">
+        <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="partyDetailCard">
+    <view class="cardName">场景布置</view>
+    <view class="box"></view>
+    <view class="price">¥1380</view>
+    <swiper class="eventSwiper" indicator-dots indicator-color="rgba(255, 255, 255, 0.6)" indicator-active-color="#FFFFFF" circular>
+      <swiper-item wx:for="{{4}}" class="eventSwiperItem">
+        <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="partyDetailCard">
+    <view class="cardName">活动费用</view>
+    <view class="box"></view>
+    <view class="price">¥1800</view>
+    <view class="eventContainer">
+      <view class="eventPrice">¥388</view>
+      <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      <view class="eventType">神奇魔术表演</view>
+    </view>
+    <view class="eventContainer">
+      <view class="eventPrice">¥388</view>
+      <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      <view class="eventType">小丑欢乐互动</view>
+    </view>
+    <view class="eventContainer">
+      <view class="eventPrice">¥388</view>
+      <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      <view class="eventType">益智科学实验</view>
+    </view>
+    <view class="eventContainer">
+      <view class="eventPrice">¥199</view>
+      <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      <view class="eventType">恐龙趣味互动</view>
+    </view>
+  </view>
+
+  <view class="partyDetailCard">
+    <view class="cardName">派对餐食</view>
+    <view class="box"></view>
+    <view class="price">¥2680</view>
+    <swiper class="eventSwiper" indicator-dots indicator-color="rgba(255, 255, 255, 0.6)" indicator-active-color="#FFFFFF" circular>
+      <swiper-item wx:for="{{4}}" class="eventSwiperItem">
+        <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      </swiper-item>
+    </swiper>
+    <view class="dishesList">
+      <view class="dish">秘鲁酸橘汁扇贝</view>
+      <view class="dish">蒜香青豆红薯泥</view>
+      <view class="dish">牛肝菌汤/南瓜汤</view>
+      <view class="dish">海鲜烩饭</view>
+      <view class="dish">牛排/羊排</view>
+      <view class="dish">手工甜品</view>
+      <view class="dish">巴黎水*1</view>
+    </view>
+  </view>
+
+  <view class="partyDetailCard">
+    <view class="cardName">甜品费用</view>
+    <view class="box"></view>
+    <view class="price">¥2680</view>
+    <view class="eventContainer">
+      <view class="eventPrice">¥568</view>
+      <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      <view class="eventType">8+10寸定制蛋糕</view>
+    </view>
+    <view class="eventContainer">
+      <view class="eventPrice">¥2000</view>
+      <image src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/seller/decoration.png"></image>
+      <view class="eventType">主题甜品台</view>
+    </view>
+  </view>
+</view>
+
+<view class="footer">
+  <view class="phoneContact">
+    <van-icon name="phone-o" size="48rpx" />
+    <text>电话联系</text>
+  </view>
+  <view class="onlineContact">在线联系</view>
+</view>

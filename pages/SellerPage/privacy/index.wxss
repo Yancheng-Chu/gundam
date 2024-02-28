@@ -1,0 +1,42 @@
+page {
+  background: #f8f8f8f8;
+}
+
+.navBar {
+  width: 750rpx;
+  height: 196rpx;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navBar .navBarContent{
+  display: flex;
+  align-items: center;
+}
+
+.navBar .backBtn {
+width: 52rpx;
+height: 52rpx;
+border-radius: 60rpx;
+background: rgba(0, 0, 0, 0.08);
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 186rpx 0 32rpx;
+}
+
+.navBar .navTitle {
+font-size: 36rpx;
+font-weight: 600;
+line-height: 36rpx;
+color: #000000;
+}
+
+.card{
+  margin-top: 200rpx;
+  padding:0 40rpx 100rpx 40rpx;
+  white-space: pre-line;
+}

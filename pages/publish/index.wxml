@@ -1,0 +1,205 @@
+<view>
+  <view class="box">
+    <!-- <van-icon name="arrow-left" class="back" bind:click="goBack" /> -->
+    <view class="back" bindtap="goBack">
+            <van-icon name="arrow-left" />
+        </view>
+    <image class="bg" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/bg.png" />
+    <image class="index_title" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/dreamParty.png" />
+
+    <view class="ab">
+      <view class="maincard">
+        <!-- 2、派对选项 派对类型-->
+        <van-cell-group>
+            <view class="card1 {{party_type == '生日派对'}}" bindtap="selectParty" data-party_type="生日派对">
+              <image class="small" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/home/party{{party_type == '生日派对' ?'-on':''}}.png" />
+            </view>
+            <view class="card3 {{party_type == '告白求婚'}}" bindtap="selectParty" data-party_type="告白求婚">
+              <image class="small" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/home/wedding{{party_type == '告白求婚' ?'-on':''}}.png" />
+            </view>
+            <view class="card2 {{party_type == '商务派对'}}" bindtap="selectParty" data-party_type="商务派对">
+              <image class="small" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/home/business{{party_type == '商务派对' ?'-on':''}}.png" />
+            </view>
+        </van-cell-group>
+
+        <!-- 3、派对选项 要求-->
+        <van-cell title="派对预算" center border="{{ false }}" title-class="cell_title" use-label-slot is-link bind:click="onClickBG">{{budget ? budget+'元' : '预估费用'}}
+        </van-cell>
+        <van-cell border="{{ false }}">
+          <zyslider id="zyslider" minValue="30" maxValue="60" min="0" max="100" bind:lowValueChange="lowValueChangeAction" bind:heighValueChange="heighValueChangeAction" />
+          <view class="test">
+            <van-row>
+              <van-col>场地:{{space}}</van-col>
+              <van-col span="8">餐食:{{meal}}</van-col>
+              <van-col span="8">娱乐:{{entertainment}}</van-col>
+            </van-row>
+          </view>
+        </van-cell>
+
+        <!-- <view class="body-view">
+     <slider class="slider-light" name="upLightSlider" value="{{upLightValue}}" bindchange="upLightChange" show-value  disabled="{{upLightFlag}}" />
+ </view> -->
+        <van-cell-group>
+          <van-cell title="派对人数" center title-class="cell_title" is-link bind:click="onClickPS">
+            {{person ? person+'人' : '到场人数'}}
+          </van-cell>
+          <van-cell title="派对举办时间" center title-class="cell_title" is-link bind:click="onClickDT">
+            {{time ? holdtime: '选择举办时间'}}
+          </van-cell>
+        </van-cell-group>
+        <van-cell title="高级定制" center title-class="cell_title" is-link bind:click="onClickDY" border="{{false}}">
+          {{diy_on || '选择您的要求'}}
+        </van-cell>
+        <!-- style="background:{{color}}"  disabled="{{isDisabled}}" error -->
+        <button id="show" style="opacity:{{opacity}}" class="{{published ? 'popup-button-cancle-main':'popup-button-main'}}" bindtap="sql" data-name="{{test}}">{{published ? '发布中':'寻找商家'}}</button>
+        <!-- <button id="show" class="popup-button-cancle-main" bindtap="sql" >测试</button> -->
+        <!-- <button id="show" style="opacity:{{opacity}}" disabled="{{isDisabled}}" class="{{published ? 'popup-button-cancle-main':'popup-button-main'}}" bindtap="publishParty" data-name="{{test}}">{{published ? '发布中':'寻找商家'}}</button> -->
+      </view>
+      <!-- 4、响应商家 -->
+      <view class="{{need_id?'reply':'hide'}}">
+        <view>
+          <view class="lg ml30 f40 in">{{offers.length || ''}}</view>
+          <view class="ml10 f24 in">{{offers.length ? '位': '暂无'}}响应商家</view>
+        </view>
+        <view wx:for="{{offers}}" wx:key="offer" wx:for-item="offer">
+          <image src="{{offer.logo1}}" class="ml20 mt10 w10 h13"></image>
+          <image src="{{offer.logo2}}" class="ml10 mt10 w23 h13"></image>
+          <view class="party_active">派对活动
+            <div class="point0 ml30 mt10"></div>
+            <div class="point1 mt10"></div>
+            <div class="point1 mt10"></div>
+            <div class="point1 mt10"></div>
+          </view>
+          <view class="ml20 mt10 f16">{{offer.title}}
+            <span class="red">{{offer.duration}}</span>
+          </view>
+          <view class="p65">
+            <view class="ml20 mt5 f18 red">¥{{offer.price}}
+              <div class="ml30 f14 gray">{{offer.location}}场地 ｜ 3.6km</div>
+            </view>
+            <image src="{{offer.logo3}}" class="mt10 ml20 w2 h2"></image>
+            <view class="in ml10 mt10 v">
+              <image src="/resource/images/party/star.png" class="w1 h1" />
+              <div class="ml10">{{offer.star}}</div>
+              <div class="ml10 f14 gray2">{{offer.designer}}</div>
+            </view>
+          </view>
+          <view class="p15 f14 center">
+            <image class="w2 h2" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/party/option.png" />
+            <view>选配</view>
+          </view>
+          <view class="p15 f14 center">
+            <image class="w2 h2" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/party/query.png" />
+            <view>咨询</view>
+          </view>
+          <view bindtap="jumpToPlan" data-index="{{index}}">
+            <view class="center mt20 f14 gray">点击查看更多方案信息{{index}}</view>
+            <view class="center h0">
+              <image class="more" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/party/more.png" />
+            </view>
+            <view class="center more2">
+              <image class="more" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/party/more.png" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 5、下面都是弹窗 -->
+  <van-toast id="van-toast" />
+
+  <van-popup show="{{ showArea }}" position="bottom" custom-style="height: 400rpx; padding:0 padding:0" bind:close="onCloseArea" closeable round close-icon="close">
+    <van-picker columns="{{ areas }}" toolbar-position:top; bind:change="onChangeArea" />
+  </van-popup>
+
+  <!-- <van-popup show="{{ showBG }}" position="bottom" custom-style="height: 440rpx; padding:0" bind:close="onCloseBG" closeable round close-icon="close">
+    <div class="popup-title">派对预算</div>
+    <div class="popup-content">
+      <input class="popup-input" type="number" maxlength="7" maxlength="7" placeholder="请输入派对预算金额" value="{{budget}}" bindinput="changeBudget" />
+      <button class="popup-button" bindtap="onCloseBG">确认</button>
+    </div>
+  </van-popup> 
+  
+    <van-popup show="{{ showPS }}" position="bottom" custom-style="height: 440rpx; padding:0" bind:close="onClosePS" closeable round close-icon="close">
+    <div class="popup-title">派对人数</div>
+    <div class="popup-content">
+      <input class="popup-input" type="number" maxlength="5" maxlength="5" placeholder="请输入派对到场人数" value="{{person}}" bindinput="changePerson" />
+      <button class="popup-button" bindtap="onClosePS">确认</button>
+    </div>
+  </van-popup> -->
+
+  <van-popup show="{{ showBG }}" position="bottom" custom-style="height: 340rpx; padding:0" bind:close="onCloseBG" closeable round close-icon="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/plan/confirm.png">
+    <div class="popup-title">派对预算</div>
+    <div class="popup-content">
+      <input class="popup-input" type="number" maxlength="7" placeholder="请输入派对预算金额" value="{{budget}}" bindinput="changeBudget" />
+    </div>
+  </van-popup>
+
+  <van-popup show="{{ showPS }}" position="bottom" custom-style="height: 340rpx; padding:0" bind:close="onClosePS" closeable round close-icon="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/plan/confirm.png">
+    <div class="popup-title">派对人数</div>
+    <div class="popup-content">
+      <input class="popup-input" type="number" maxlength="5" placeholder="请输入派对到场人数" value="{{person}}" bindinput="changePerson" />
+    </div>
+  </van-popup>
+
+  <van-calendar title="派对举办时间" show="{{ showDT }}" bind:close="onCloseDT" color="linear-gradient(90deg, #E974C6 0%, #F4AA72 54%, #FFBC92 98%)" bind:confirm="onConfirmDate"></van-calendar>
+
+  <van-popup show="{{ showDT2 }}" position="bottom" custom-style="height: 400rpx;" bind:close="onCloseDT2" closeable round close-icon="close">
+     
+    <van-icon name="arrow-left" size="44rpx" style="position: absolute; margin-top: 44rpx;" bind:click="back" />
+    <div class="popup-title">派对举办时间</div>
+    <div class="popup-content">
+
+      <!-- <van-datetime-picker
+  type="time"
+  value="{{ currentDatecurrentDate }}"
+  bind:input="onInput"
+  min-minute="{{ minMinute }}"
+  min-hour="{{ minHour }}"
+  max-hour="{{ maxHour }}"
+  formatter="{{ formatter }}"
+/> -->
+
+      <picker mode="multiSelector" bindchange="pickerChange" bindtap='picker' range="{{arrays}}" bindcolumnchange="checkColumn" value="{{multiIndex}}">
+        <view class="popup-input2">
+          {{holdtime}}
+        </view>
+      </picker>
+
+      <!-- <view class="{{time==time_select ? 'party-time-on' : 'party-time'}}"   wx:for="{{times}}"  wx:key="index"  wx:for-item="time_select"
+      bindtap="onSelectDT"    data-time="{{time_select}}">
+        {{date}}  {{time_select}}
+      </view> -->
+      <button class="popup-button" bindtap="onCloseDT2">确认</button>
+    </div>
+  </van-popup>
+
+  <van-popup show="{{ showDY }}" position="bottom" custom-style="height: 906rpx; padding:0" bind:close="onCloseDY" closeable round close-icon="close">
+    <div class="popup-title">高级定制</div>
+    <view class="popup-diy {{diy_obj[diy] ? 'diy-on' : ''}}" wx:for="{{diys}}" wx:for-index='i' wx:key="diy" wx:for-item="diy" >
+      <view wx:for="{{diyss}}" wx:for-index='j' wx:key="diysss"wx:for-item="diysss">
+      <view wx:if="{{i == j}}" >
+      <view bindtap="onSelectDY" data-diy="{{diy}}">
+      {{diy}}
+      <view style='font-size: 18rpx;line-height: 0;' data-diy="{{diy}}">
+      {{diysss}}
+    </view>
+      </view>
+    </view>
+      </view>
+    </view>
+
+    <button class="popup-button" bindtap="onCloseDY">确认</button>
+  </van-popup>
+
+  <van-popup show="{{ showCF }}" position="bottom" custom-style="height: 400rpx; padding:0 padding:0" bind:close="onCloseCF" closeable round close-icon="close">
+    <view class="popup-confirm mt30">是否取消本次派对招募</view>
+    <view class="popup-confirm">并通知已提供方案的所有商家</view>
+    <button class="popup-button1" bindtap="deleteParty">确认</button>
+    <button class="popup-button2" bindtap="onCloseCF">取消</button>
+  </van-popup>
+</view>
+
+<import src="../../Component/img-loader/img-loader.wxml"/>
+<template is="img-loader" data="{{ imgLoadList }}"></template>

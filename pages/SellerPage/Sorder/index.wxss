@@ -1,0 +1,123 @@
+page {
+  background: #F7F7F7;
+}
+
+.mineLogo {
+  position: relative;
+  height: 408rpx;
+  background: #FF9D3C;
+}
+
+.mineContainer {
+  width: 100%;
+  position: absolute;
+  top: 256rpx;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+}
+
+.top {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50rpx;
+  top: 150rpx;
+}
+
+.top .userName {
+  color: #FFFFFF;
+  margin-top: 40rpx;
+  font-size: 72rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+}
+
+.status {
+  position: absolute;
+  top: 330rpx;
+  left: 32rpx;
+  background: #FFBE6F;
+  width: 686rpx;
+  height: 256rpx;
+  border-radius: 28rpx;
+}
+
+.line {
+  position: absolute;
+  left: 228rpx;
+  top: 12rpx;
+  width: 2rpx;
+  height: 226rpx;
+  border: 2rpx dashed #FFFFFF;
+}
+.line2 {
+  position: absolute;
+  left: 457rpx;
+  top: 12rpx;
+  width: 2rpx;
+  height: 226rpx;
+  border: 2rpx dashed #FFFFFF;
+}
+
+.count {
+  color: #FFFFFF;
+  font-size: 72rpx;
+  text-align: center;
+}
+
+.capacity {
+  text-align: center;
+  width: 66rpx;
+  height: 44rpx;
+  font-size: 36rpx;
+  line-height: 44rpx;
+  color: #FFFFFF;
+}
+
+.status .price {
+  color: #ffffff;
+  font-size: 72rpx
+}
+
+.serviceCard {
+  margin-top:30rpx;
+  margin-left: 32rpx;
+  height: 225rpx;
+  width: 686rpx;
+  background-color: #FFFFFF;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 20rpx 0 rgba(255, 234, 234, 0.7);
+  padding-top: 16rpx;
+}
+
+.serviceItem {
+  /* display: flex; */
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+.serviceItem .detail{
+  font-size: 28rpx;
+  line-height: 55rpx;
+  color: #9E9E9E;
+}
+.serviceItem .more{
+  display: inline-flex;
+  position: absolute;
+  right: 80rpx;
+font-size: 36rpx;
+background-image:-webkit-linear-gradient(90deg,#FFBC7B,#FF8F1F,yellow); 
+-webkit-background-clip:text; 
+-webkit-text-fill-color:transparent;
+}
+
+.title{  
+  margin-bottom:10rpx;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  color: #333333;
+  font-weight: 540;
+}
+.van-tabbar-item {
+  margin-top: 25rpx;
+}

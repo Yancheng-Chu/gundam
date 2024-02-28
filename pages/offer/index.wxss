@@ -1,0 +1,133 @@
+page {
+  background: #F7F7F7;
+}
+
+.bg {
+  position: absolute;
+  width: 766rpx;
+  height: 182rpx;
+  top: 78rpx;
+}
+.right {
+  width: 330rpx;
+  position: absolute;
+  margin-top: 500rpx;
+  height: 440rpx;
+}
+.left{
+  width: 330rpx;
+  position: absolute;
+  height: 440rpx;
+  right: 0
+}
+.read_point {
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 8rpx;
+  background: #F68B64;
+  margin-left: 32rpx;
+  margin-top: 32rpx;
+}
+.read_point2 {
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 8rpx;
+  background: #42d189;
+  margin-left: 32rpx;
+  margin-top: 32rpx;
+}
+.mineContainer2 {
+  margin-left: 15rpx;
+  z-index: 1;
+  position: absolute;
+  top:758rpx;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+}
+
+
+.rough2 {
+  width: 350rpx;
+  position: absolute;
+  margin-left: 300rpx;
+}
+
+.mineLogo {
+  position: relative;
+  height: 248rpx;
+  background: #FFF5EB;
+}
+
+.mineContainer {
+  margin-left: 15rpx;
+  z-index: 1;
+  position: absolute;
+  top:258rpx;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+}
+
+.infoCard {
+  width:620rpx;
+  height: 390rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  margin-bottom: 12rpx;
+  padding: 24rpx 40rpx 0 0;
+  border: 4rpx solid #fff;
+  position: absolute;
+  opacity: 0.7;
+  box-shadow: 0rpx 8rpx 32rpx rgba(255, 0, 0, 0.16);
+}
+
+.van-dropdown-menu__title{
+  color:#F68B64 !important
+}
+
+.test{
+  margin-top: -5rpx;
+  font-weight: 800;
+  box-shadow: unset !important;
+}
+
+
+.s1{
+  display: inline-block;
+  margin-left: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 4rpx solid #999999;
+}
+.s2{
+  display: inline-block;
+  margin-left: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 4rpx solid #999999;
+}
+.vs{
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 40rpx;
+  margin-bottom: 10rpx;
+}
+.s3{
+  display: inline-block;
+  margin-left: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 4rpx solid #999999;
+}
+.s4{
+  display: inline-block;
+  margin-left: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 4rpx solid #999999;
+}

@@ -1,0 +1,53 @@
+<view class="navBar">
+  <van-icon name="arrow-left" class='backBtn' size="50rpx" bindtap="back" data-complete="审核中"/>
+  <view class="navTitle">审核详情</view>
+</view>
+<!-- <image src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/check.png' />
+<view class='check'>审核中</view> -->
+<van-cell-group>
+  <view style="padding-left: 40rpx; background:#fff;margin-top: 50rpx;">
+    <van-cell title="申请信息" custom-style=" padding:30rpx 40rpx 30rpx 40rpx; color:#9E9E9E; font-size:32rpx"></van-cell>
+    <van-cell custom-style="padding:30rpx 40rpx 30rpx 40rpx; color:#9E9E9E; font-size:32rpx">
+      <view slot="title">
+        <view class="text">申请项目：</view>
+        <van-tag class="tag">{{title}}</van-tag>
+      </view>
+    </van-cell>
+  </view>
+
+  <view style="padding-left: 40rpx; background:#fff; margin-top: 80rpx;">
+    <van-cell title="审核流程" custom-style=" padding:30rpx 40rpx 30rpx 40rpx; color:#9E9E9E; font-size:32rpx"></van-cell>
+    <!-- <van-cell custom-style=" padding:30rpx 40rpx 120rpx 40rpx; color:#9E9E9E; font-size:32rpx">
+      <view class='step'>
+        <image class='i' src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/loading.png'></image>
+        <view class='ii'>审核报告<view class="iii">系统已审核</view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class='stepII'>
+        <image class='i' src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/loading.png'></image>
+        <view class='ii'>正在审核<view class="iii">系统审核申请人信息</view>
+        </view>
+      </view>
+      <view class='line2'></view>
+      <view class='stepIII'>
+        <view class='time'>
+          {{year}}<view class='time2'>{{time}}</view>
+        </view>
+        <image class='i' src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/checked.png'></image>
+        <view class='ii'>上传资料<view class="iii">申请人上传资料</view>
+        </view>
+      </view>
+    </van-cell> -->
+    <view style="margin-left:200rpx;" >
+    <van-steps 
+    desc-class='steps'
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-color="#333333"
+  inactive-color="#9E9E9E"
+/>
+</view>
+  </view> 
+</van-cell-group>

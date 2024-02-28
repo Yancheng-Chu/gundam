@@ -1,0 +1,91 @@
+<view class="navigationBar">
+  <view class="row">
+    <van-icon name="arrow-left" size="50rpx" color="white" bindtap="back" />
+    <text class="pageName">餐品列表</text>
+  </view>
+</view>
+
+<van-tabs color="#FFBE6F" class="siteTabs" active="{{ active }}" bind:change="onChange" animated>
+  <van-tab title="待审核">
+    <scroll-view scroll-y class="siteScroll">
+      <block wx:for="{{dishList}}" wx:key="_id">
+        <view class="siteCard" wx:if="{{item.status == 0}}">
+          <view class="siteDetail" style="transform: translateX({{item.x + 'rpx'}});" data-dishId="{{item._id}}" bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove">
+            <image src="{{item.picList[0]}}"></image>
+            <view class="siteInfo">
+              <text class="siteName">{{item.name}}</text>
+              <text class="date">更新时间：{{item.timeStamp}}</text>
+              <text class="times">顾客选择次数：{{item.usedTimes}}</text>
+            </view>
+            <van-icon bind:click="editDish" data-dishId="{{item._id}}" class="edit" name="edit" size="50rpx" color="#C5C5C5" />
+          </view>
+          <view class="delete" bindtap="showPopup" data-dishId="{{item._id}}">
+            删除
+          </view>
+        </view>
+      </block>
+      <van-empty wx:if="{{!hasReview}}" image="search" description="当前列表暂无数据，请添加" />
+    </scroll-view>
+  </van-tab>
+  <van-tab title="已拒绝">
+    <scroll-view scroll-y class="siteScroll">
+      <block wx:for="{{dishList}}" wx:key="_id">
+        <view class="siteCard" wx:if="{{item.status == 2}}">
+          <view class="siteDetail" style="transform: translateX({{item.x + 'rpx'}});" data-dishId="{{item._id}}" bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove">
+            <image src="{{item.picList[0]}}"></image>
+            <view class="siteInfo">
+              <text class="siteName">{{item.name}}</text>
+              <text class="date">更新时间：{{item.timeStamp}}</text>
+              <text class="times">顾客选择次数：{{item.usedTimes}}</text>
+            </view>
+            <van-icon bind:click="editDish" data-dishId="{{item._id}}" class="edit" name="edit" size="50rpx" color="#C5C5C5" />
+          </view>
+          <view class="delete" bindtap="showPopup" data-dishId="{{item._id}}">
+            删除
+          </view>
+        </view>
+      </block>
+      <van-empty wx:if="{{!hasReview}}" image="search" description="当前列表暂无数据，请添加" />
+    </scroll-view>
+  </van-tab>
+  <van-tab title="可以使用">
+    <scroll-view scroll-y class="siteScroll">
+      <block wx:for="{{dishList}}" wx:key="_id">
+        <view class="siteCard" wx:if="{{item.status == 1}}">
+          <view class="siteDetail" style="transform: translateX({{item.x + 'rpx'}});" data-dishId="{{item._id}}" bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove">
+            <image src="{{item.picList[0]}}"></image>
+            <view class="siteInfo">
+              <text class="siteName">{{item.name}}</text>
+              <text class="date">更新时间：{{item.timeStamp}}</text>
+              <text class="times">顾客选择次数：{{item.usedTimes}}</text>
+            </view>
+            <van-icon bind:click="editDish" data-dishId="{{item._id}}" class="edit" name="edit" size="50rpx" color="#C5C5C5" />
+          </view>
+          <view class="delete" bindtap="showPopup" data-dishId="{{item._id}}">
+            删除
+          </view>
+        </view>
+      </block>
+      <van-empty wx:if="{{!hasAvailable}}" image="search" description="当前列表暂无数据，请添加" />
+    </scroll-view>
+  </van-tab>
+</van-tabs>
+
+<button class="addBtn" bindtap="toDishInfo">
+  <van-icon name="add-o" size="66rpx" />
+  新建
+</button>
+
+<van-popup show="{{ show }}" bind:close="onClose" custom-style="padding: 0">
+  <view class="confirmCard">
+    <view class="content">
+      <text class="title">删除餐品</text>
+      <text class="tips">是否删除当前餐品</text>
+    </view>
+    <view class="footer">
+      <text class="cancel" bindtap="onClose">我再想想</text>
+      <view class="line"></view>
+      <text class="confirm" bindtap="deleteDish">确定删除</text>
+    </view>
+  </view>
+</van-popup>

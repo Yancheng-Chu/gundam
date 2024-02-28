@@ -1,0 +1,39 @@
+.title {
+  position: absolute;
+  left: 34rpx;
+  top: 188rpx;
+  width: 622rpx;
+  height: 68rpx;
+  font-size: 64rpx;
+  display: flex;
+  color: #333333;
+  font-weight: 550;
+}
+
+.t{
+text-align:center;
+vertical-align:middle;
+margin-top:314rpx;
+}
+.t .pic{
+  width: 348rpx;
+  height: 348rpx;
+}
+.t .text{
+  font-size: 64rpx;
+  color: #333333;
+  margin-top:50rpx;
+}
+/* .pic{
+  position: absolute;
+  left: 212rpx;
+  top: 364rpx;
+  width: 348rpx;
+  height: 348rpx;
+}
+.text{
+  font-size: 64rpx;
+  color: #333333;
+  margin-top:724rpx;
+  text-align: center;
+} */

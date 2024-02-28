@@ -1,0 +1,27 @@
+
+
+<view class="navBar">
+  <van-icon name="arrow-left" class='backBtn' size="50rpx" bindtap="back"/>
+  <view class="navTitle">店铺认证</view>
+</view>
+
+<view class = 'card'>
+<view style="padding-left: 40rpx; background:#fff;">
+<van-cell title="法人身份证" is-link clickable required bind:click="checkID" custom-style="margin-bottom: 40rpx; padding:30rpx 40rpx 30rpx 40rpx; color:#9E9E9E; font-size:32rpx" value-class='{{colorI}}' data-check="{{completeI}}" data-title="{{titles}}" data-activate="{{ID_activate}}">
+{{completeI? completeI:'未完成'}}
+</van-cell>
+</view>
+<view style="padding-left: 40rpx; background:#fff;">
+<van-cell title="营业执照" is-link clickable required bind:click="checkLi"
+custom-style="margin-bottom: 40rpx; padding:30rpx 40rpx 30rpx 40rpx; color:#9E9E9E; font-size:32rpx" value-class='{{colorL}}' data-check="{{completeL}}" data-title="{{titles}}" data-activate="{{Li_activate}}">
+{{completeL? completeL:'未完成'}}
+</van-cell>
+</view>
+<view style="padding-left: 40rpx; background:#fff;">
+<van-cell title="食品安全证明" is-link clickable required bind:click="checkFo"
+custom-style="margin-bottom: 40rpx; padding:30rpx 40rpx 30rpx 40rpx; color:#9E9E9E; font-size:32rpx" value-class='{{colorF}}' data-check="{{completeF}}" data-title="{{titles}}" data-activate="{{Fo_activate}}">
+{{completeF? completeF:'未完成'}}
+</van-cell>
+</view>
+</view>
+

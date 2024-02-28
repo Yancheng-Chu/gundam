@@ -1,0 +1,153 @@
+page {
+  background: #F7F7F7;
+}
+
+.mineLogo {
+  position: relative;
+  height: 408rpx;
+  background: #FF9D3C;
+}
+
+.mineContainer {
+  width: 100%;
+  position: absolute;
+  top: 256rpx;
+  box-sizing: border-box;
+  padding: 0 32rpx;
+}
+
+.top {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50rpx;
+  top: 150rpx;
+}
+
+.top .avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  left: 50rpx;
+  top: 150rpx;
+}
+
+.avatar image {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  border: 4rpx solid #FC8843;
+}
+
+.top .userName {
+  color: #FFFFFF;
+  margin-left: 40rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+}
+
+.status {
+  position: absolute;
+  top: 330rpx;
+  left: 32rpx;
+  background: #FFBE6F;
+  width: 686rpx;
+  height: 256rpx;
+  border-radius: 28rpx;
+}
+
+.line {
+  position: absolute;
+  left: 228rpx;
+  top: 12rpx;
+  width: 2rpx;
+  height: 226rpx;
+  border: 2rpx dashed #FFFFFF;
+}
+.line2 {
+  position: absolute;
+  left: 457rpx;
+  top: 12rpx;
+  width: 2rpx;
+  height: 226rpx;
+  border: 2rpx dashed #FFFFFF;
+}
+
+.count {
+  color: #FFFFFF;
+  font-size: 72rpx;
+  text-align: center;
+}
+
+.capacity {
+  text-align: center;
+  width: 66rpx;
+  height: 44rpx;
+  font-size: 36rpx;
+  line-height: 44rpx;
+  color: #FFFFFF;
+}
+
+.status .price {
+  color: #ffffff;
+  font-size: 72rpx
+}
+
+.serviceCard {
+  margin-top:250rpx;
+  margin-left: 32rpx;
+  height: 660rpx;
+  width: 686rpx;
+  background-color: #FFFFFF;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 20rpx 0 rgba(255, 234, 234, 0.7);
+  padding-top: 32rpx;
+}
+
+
+
+.serviceContainer {
+  margin-top: 40rpx;
+  padding: 0rpx 20rpx;
+  display: flex;
+  /* margin-bottom: 40rpx; */
+  /* justify-content: flex-start; */
+}
+
+
+.serviceContainer .serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 74rpx; */
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+}
+
+.serviceContainer .serviceItem:last-child {
+  margin-right: 0;
+}
+
+.serviceItem .serviceIcon {
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 14rpx;
+}
+
+.serviceItem text {
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: #9E9E9E;
+}
+
+
+.title{
+  font-size: 36rpx;
+  color:#9E9E9E;
+  margin-left: 40rpx;
+}
+.van-tabbar-item {
+  margin-top: 25rpx;
+}

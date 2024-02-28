@@ -1,0 +1,65 @@
+.title {
+  position: absolute;
+  left: 34rpx;
+  top: 188rpx;
+  width: 622rpx;
+  height: 68rpx;
+  font-size: 64rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: 550;
+}
+.card {
+  margin-top: 360rpx;
+  margin-left: 64rpx;
+}
+
+.card .account {
+  font-size: 42rpx;
+  font-weight: 50;
+}
+.card .password {
+  font-size: 42rpx;
+  font-weight: 50;
+}
+
+
+.account .a {
+  margin-top: 25rpx;
+  width: 622rpx;
+  height: 110rpx;
+  border-radius: 40rpx;
+  background: #F2F5FF;
+  box-shadow: 0rpx 8rpx 0rpx -2rpx #FF8F1F;
+  margin-bottom: 60rpx;
+}
+
+.password .p {
+  margin-top: 25rpx;
+  width: 622rpx;
+  height: 110rpx;
+  border-radius: 40rpx;
+  background: #F2F5FF;
+  box-shadow: 0rpx 8rpx 0rpx -2rpx #FF8F1F;
+  margin-bottom: 60rpx;
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login {
+  margin-top: 100rpx;
+  width: 622rpx;
+  height: 110rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(103deg, #FFBC7B 0%, #FF8F1F 100%);
+  box-shadow: 0rpx 23.04rpx 22.06rpx 0rpx rgba(21, 31, 48, 0.04);
+  color: #FFFFFF;
+}

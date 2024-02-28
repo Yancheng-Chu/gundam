@@ -1,0 +1,64 @@
+<view class="mineLogo">
+  <image class="bg" src="/resource/4.png" />
+</view>
+<image class="left" src="/resource/2.png" />
+<image class="right" src="/resource/8.png" />
+<view class="mineContainer">
+  <view class="infoCard">
+    <van-row>
+      <van-col>
+        <view class="read_point"></view>
+      </van-col>
+      <van-col>
+        <van-dropdown-menu active-color="#F68B64" custom-class="test">
+          <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+        </van-dropdown-menu>
+      </van-col>
+    </van-row>
+    <van-row>
+      <van-col>
+        <view style="margin:0 0 0 30rpx;font-size: 26rpx;">发动技能：</view>
+      </van-col>
+    </van-row>
+    <van-row>
+      <van-col>
+        <view style="margin:10rpx 0 0 30rpx;font-size: 26rpx;">叙述、镜头语言扁平！</view>
+      </van-col>
+    </van-row>
+  </view>
+</view>
+
+<view class="mineContainer2">
+  <view class="infoCard">
+    <view class="rough2">
+      <van-row>
+        <van-col>
+          <view class="read_point2"></view>
+        </van-col>
+        <van-col>
+          <van-dropdown-menu active-color="#F68B64" custom-class="test">
+            <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+          </van-dropdown-menu>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <view style="margin:0 0 0 30rpx;font-size: 26rpx;">发动技能：</view>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <view style="margin:10rpx 0 0 30rpx;font-size: 26rpx;">年轻时诋毁,长大后理解,成熟后尊重！</view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+
+<view style="margin-top: 1050rpx;">
+<view class="s1" />
+  <view class="s2" />
+  <image class='vs' src="/resource/7.png" />
+  <view class="s3" />
+  <view class="s4" />
+</view>

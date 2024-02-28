@@ -1,0 +1,97 @@
+page{
+  background: #F7F7F7;
+}
+.navBar {
+  width: 100%;
+  height: 240rpx;
+  background: #FF942A;
+}
+.check{
+  margin-left:40rpx;
+  margin-top: 50rpx;
+  font-size: 26rpx;
+}
+.navBar .backBtn{
+  margin-top:150rpx;
+  position: absolute;
+  margin-left:32rpx;
+}
+.navBar .navTitle {
+padding-top:150rpx;
+font-size: 36rpx;
+font-weight: 600;
+color: #FFFFFF;
+text-align: center;
+}
+
+.card{
+  margin-top: 50rpx;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login {
+  margin-top: 30rpx;
+  width: 622rpx;
+  height: 120rpx;
+  border-radius: 188rpx;
+  background: linear-gradient(103deg, #FFBC7B 0%, #FF8F1F 100%);
+  box-shadow: 0rpx 23.04rpx 22.06rpx 0rpx rgba(21, 31, 48, 0.04);
+  color: #FFFFFF;
+}
+image{
+  width: 450rpx;
+  height: 564rpx;
+  margin-bottom: 40rpx;
+  margin-left:150rpx;
+}
+.f{
+  margin-left: 234rpx;
+  margin-bottom: 40rpx;
+  color:#2381F4
+}
+.f:before{
+  content:'*';
+  color:red
+}
+.popup-title {
+  display: block;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-bottom: 0rpx;
+  font-size: 40rpx;
+}
+.popup-content {
+  display: block;
+  margin: 10rpx 40rpx 0 20rpx;
+}
+
+.popup-input {
+  height: 64rpx;
+  padding: 20rpx 24rpx;
+  margin: 44rpx;
+  background: #f0f0f0;
+  border-radius: 16rpx;
+  font-size: 36rpx;
+  text-align: center;
+}
+.popup-input2 {
+  height: 74rpx;
+  padding-top: 30rpx;
+  margin: 44rpx;
+  background: #f0f0f0;
+  border-radius: 16rpx;
+  font-size: 36rpx;
+  text-align: center;
+}
+.van-uploader__preview-image {
+  display: block;
+  height: var(--uploader-size,555rpx) !important;
+  overflow: hidden;
+  width: var(--uploader-size,450rpx) !important;
+}

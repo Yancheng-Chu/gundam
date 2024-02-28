@@ -1,0 +1,88 @@
+<view class="mineLogo">
+  <image class="bg" src="/resource/4.png" />
+</view>
+<image class="left" src="/resource/2.png" />
+<image class="right" src="/resource/8.png" />
+<view class="mineContainer">
+  <view class="infoCard">
+    <view class="rough">
+      <van-row>
+        <van-col>
+          <view class="read_point"></view>
+        </van-col>
+        <van-col>
+          <van-dropdown-menu active-color="#F68B64" custom-class="test" overlay="{{false}}">
+            <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+          </van-dropdown-menu>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <view style="margin:0 0 0 30rpx;font-size: 26rpx;">发动技能：</view>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <view style="margin:10rpx 0 0 30rpx;font-size: 26rpx;">叙述、镜头语言扁平！</view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+
+<view class="mineContainer2">
+  <view class="infoCard">
+    <view class="rough2">
+      <van-row>
+        <van-col>
+          <view class="read_point2"></view>
+        </van-col>
+        <van-col>
+          <van-dropdown-menu active-color="#42d189" custom-class="test" overlay="{{false}}">
+            <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+          </van-dropdown-menu>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <view style="margin:0 0 0 30rpx;font-size: 26rpx;">发动技能：</view>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <view style="margin:10rpx 0 0 30rpx;font-size: 26rpx;">年轻时诋毁,长大后理解,成熟后尊重！</view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+
+<view bindtap="close">
+  <view style="height: 1020rpx;" />
+</view>
+
+<view>
+  <view class="s1" bindtap="popup">
+    <image src="{{src}}"></image>
+  </view>
+  <view class="s2" bindtap="popup" data-s="2">
+    <image src="{{src2}}"></image>
+  </view>
+  <image class='vs' src="/resource/7.png" />
+  <view class="s3" bindtap="popup" data-s="3">
+    <image src="{{src3}}"></image>
+  </view>
+  <view class="s4" bindtap="popup" data-s="4">
+    <image src="{{src4}}"></image>
+  </view>
+</view>
+
+<view style="height: 80rpx;" bindtap="close" />
+
+<view class="popupmenu" style="left:{{x}}rpx;margin-top: 195rpx;" wx:if="{{popupshow}}">
+  <view wx:for="{{32}}" style="display: inline-block;">
+    <view class="s">
+      <image src="/resource/11.png" bindtap="select" data-ss="{{s}}"></image>
+    </view>
+  </view>
+</view>

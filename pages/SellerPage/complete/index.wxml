@@ -1,0 +1,6 @@
+<view class='title'><van-icon name="arrow-left" style="margin-right: 30rpx;" bindtap="back"/></view>>
+<view class='t'>
+<image class='pic'
+src='cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/seller/login/confirm.png' />
+<view class='text'>{{text}}</view>
+</view>

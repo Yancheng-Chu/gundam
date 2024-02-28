@@ -1,0 +1,18 @@
+<view class="navBar">
+  <van-icon name="arrow-left" class='backBtn' size="50rpx" bindtap="back" />
+  <view class="navTitle">订单详情</view>
+</view>
+<view class="serviceCard">
+      <view class="serviceItem">
+      <view class='title'>派对类型: {{party_type}}</view>
+      <text class='detail' space="ensp">预算: {{budget}}元\n人数: {{person}}\n高级定制: {{diy_on}}\n发布时间: {{orderTime}}\n举办时间: {{date}}</text>
+      <view class='more'>{{o_s}}</view>
+    </view>
+</view>
+<view style="padding-left: 32rpx; margin-top:60rpx; padding-right: 32rpx;">
+    <van-cell title="报价金额:" clickable custom-style="border-radius: 18rpx; margin-bottom: 20rpx; padding:30rpx 40rpx 30rpx 40rpx; color:#333333; font-size:36rpx">
+      <input bindinput="onChange"	maxlength="8" type="number" placeholder="请输入" placeholder-style="color: #9E9E9E" value="{{amount}}" disabled="{{order_check}}"></input>
+    </van-cell>
+  </view>
+<button class='login' hidden="{{order_check}}" bindtap='jump' data-id="{{listId}}" data-status="{{status}}" disabled="{{isDisabled}}" style="opacity:{{opacity}}">发起报价</button>
+

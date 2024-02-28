@@ -1,0 +1,51 @@
+<view>
+  <view class="back" bindtap="jumpBack">
+    <van-icon name="arrow-left" size="48rpx"/>
+  </view>
+  <image class="plan_logo" src="http://hdcafe.com/resource/images/plan/plan.png" />
+  <view class="plan_title f16">
+    星黛露主题派对
+    <view class="line"></view>
+    <view class="f14 gray3">默认方案</view>
+    <button class="xuanpei_btn" >选配</button>
+  </view>
+
+  <view class="plans">
+    <view wx:for="{{plans}}" wx:for-index="key" wx:for-item="plan" wx:key="key" data-plankey="{{key}}"
+    >
+      <view class="ml20 mt30 f32 fw600">{{key}}</view>
+
+      <view wx:for="{{plan}}" wx:key="index" wx:for-item="service">
+        <view class="plan_card ml20 mt20 br8">
+          <view>
+            <image class="plan_image"
+              src="{{service.logo}}"
+            />
+            <view class="plan_price_box">
+              <view class="plan_price f16">
+                ¥{{service.price}}
+              </view>
+            </view>
+          </view>
+
+          <view class="ml20 mt10 f20 in p55 fw600">{{service.title}}</view>
+          <view class="f14 gray2 p30 right">{{service.duration}}</view>
+          
+          <view class="ml20 f14 gray2 pb18">{{service.detail}}</view>
+
+        </view>  
+      </view>
+    </view>
+  </view>
+
+  <view class="pay">
+        <image class="w24 h24 enter_logo" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/plan/enter.png" />
+        <view class=" f10 enter_text">进店</view>
+
+        <image class="w24 h24 query_logo" src="cloud://dancer-dev-3gke67tld8fbc9b8.6461-dancer-dev-3gke67tld8fbc9b8-1302634362/party/resource/images/plan/query.png" />
+        <view class=" f10 query_text">咨询</view>
+
+        <view class="payment  f14" bindtap="payment">{{offer.price || 8000}}</view>
+
+  </view>
+</view>
