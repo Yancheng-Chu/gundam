@@ -1,0 +1,114 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/index",
+    "pages/offer/index",
+    "pages/publish/index",
+    "pages/list/index",
+    "pages/order/index",
+    "pages/order_detail/index",
+    "pages/planDetail/index",
+    "pages/seller_detail/index",
+    "pages/SellerPage/Sclass/index",
+    "pages/SellerPage/complete/index",
+    "pages/SellerPage/Spage/index",
+    "pages/SellerPage/Smain/index",
+    "pages/SellerPage/Sorder/index",
+    "pages/SellerPage/Slist/index",
+    "pages/SellerPage/inforrm/index",
+    "pages/SellerPage/Sorder_detail/index",
+    "pages/SellerPage/information/index",
+    "pages/SellerPage/token/index",
+    "pages/SellerPage/identify/index",
+    "pages/SellerPage/getID/index",
+    "pages/SellerPage/getLi/index",
+    "pages/SellerPage/check/index",
+    "pages/SellerPage/getFo/index",
+    "pages/SellerPage/siteList/index",
+    "pages/SellerPage/siteInfo/index",
+    "pages/SellerPage/dishList/index",
+    "pages/SellerPage/dishInfo/index",
+    "pages/SellerPage/layoutList/index",
+    "pages/SellerPage/layoutInfo/index",
+    "pages/SellerPage/filmList/index",
+    "pages/SellerPage/filmInfo/index",
+    "pages/SellerPage/privacy/index",
+    "pages/SellerPage/sla/index",
+    "pages/SellerPage/performanceList/index",
+    "pages/SellerPage/performanceInfo/index"
+  ],
+  "useExtendedLib": {
+    "weui": true
+  },
+  "usingComponents": {
+    "van-cell": "/miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index",
+    "van-row": "/miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "/miniprogram_npm/@vant/weapp/col/index",
+    "van-popup": "/miniprogram_npm/@vant/weapp/popup/index",
+    "van-button": "/miniprogram_npm/@vant/weapp/button/index",
+    "van-calendar": "/miniprogram_npm/@vant/weapp/calendar/index",
+    "van-picker": "/miniprogram_npm/@vant/weapp/picker/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-datetime-picker": "/miniprogram_npm/@vant/weapp/datetime-picker/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "zyslider": "../../Component/zyslider/zyslider",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-rate": "@vant/weapp/rate/index",
+    "van-field": "@vant/weapp/field/index",
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#f2f2f2",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Party",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "position": "bottom",
+    "color": "#999",
+    "selectedColor": "#FFB183",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/mine/index"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "location"
+  ],
+  "requiredPrivateInfos": [
+    "chooseLocation",
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取用户地理位置"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "chooseLocation": {
+      "version": "1.0.9",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  }
+}
