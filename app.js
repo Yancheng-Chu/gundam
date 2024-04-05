@@ -9,7 +9,7 @@ import {
 App({
   onLaunch() {
     wx.cloud.init({
-      env: 'dancer-dev-3gke67tld8fbc9b8'
+      env: ''
     })
 
     // wx.clearStorageSync()
